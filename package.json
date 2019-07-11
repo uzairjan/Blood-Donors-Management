@@ -1,0 +1,20 @@
+{
+  "name": "adminpanel",
+  "version": "1.0.0",
+  "description": "admin panel for blood donation",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "hbs": "^4.0.4",
+    "mongoose": "^5.6.3",
+    "nodemon": "^1.19.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}

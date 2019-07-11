@@ -1,0 +1,67 @@
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="widget-box">
+                <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+                    <h5>Data table</h5>
+                </div>
+                <div class="widget-content nopadding">
+                    <table class="table table-bordered data-table">
+                        <thead>
+                            <tr>
+                                <th>S.#</th>
+                                <th>Name</th>
+                                <th>Ref. #</th>
+                                <th>Email</th>
+                                <th>Mobile</th>
+                                <th>Blood Group</th>
+                                <th>Age</th>
+                                <th>Hospital Name</th>
+                                <th>Till Required</th>
+                                <th>Address</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{# if requests}}
+                                {{# each requests}}
+                                        <tr>
+                                            <td>{{this.name}}</td>
+                                            <td>
+                                                {{{formateDate this.request_date}}}
+                                            </td>
+                                            <td>{{this.refno }}</td>
+                                            <td> {{this.email}}</td>
+                                            <td> {{this.contact}}</td>
+                                            <td>{{this.blood_group}} </td>
+                                            <td>{{this.age}} </td>
+                                            <td>{{this.hospital_name}} </td>
+                                            <td>{{formateDate this.till_date}} </td>
+                                            <td>{{this.address}} </td>
+                                            <td>
+                                               
+                                                <button type="button" onclick="" data-ddonor-id="" class="btn btn-danger btn-sm" data-toggle="modal"
+                                                    data-target="#DeleteDonor">
+                                                    Delete
+                                                </button>
+                                                <a href="" data-donor-id="" class="btn btn-light btn-sm">
+                                                    Edit
+                                                </a>
+                                                <span style="display:block; width:170px;"></span>
+                                               
+                                            </td>
+                                        </tr>
+                                    </tr>
+                                {{/each}}
+                            {{else}}
+                                <tr class="gradeX">
+                                    No Request found
+                                </tr>
+                            {{/if}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
