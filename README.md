@@ -16,12 +16,6 @@ $ yarn install
 $ yarn run start 
 ```
 
-For production environments...
-
-```sh
-$ yarn run prod
-```
-
 ### Development
 
 License
