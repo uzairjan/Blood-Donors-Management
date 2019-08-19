@@ -13,7 +13,7 @@ Install the dependencies and devDependencies and start the server.
 ```sh
 $ cd admin_dashboard
 $ yarn install 
-$ yarn run dev for development 
+$ yarn run start 
 ```
 
 For production environments...
