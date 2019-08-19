@@ -9,7 +9,7 @@
     "yarn": "1.9.4"
   },
   "scripts": {
-    "dev": "nodemon index.js"
+    "start": "nodemon index.js"
   },
   "dependencies": {
     "bcrypt-nodejs": "^0.0.3",
