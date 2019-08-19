@@ -21,10 +21,10 @@ exports.index = (req, res) => {
 };
 
 exports.delete = (req, res) => {
-  req.flash("delete", "Request is deleted successfully");
+ 
   Request.findByIdAndDelete(req.params.id, (err, request) => {
-    var message = req.flash("error", "this is an error");
     if (!err) {
+       req.flash("delete", "Request is deleted successfully");
       res.redirect("/admin/requests");
     } else {
       console.log("Error while Deleting");

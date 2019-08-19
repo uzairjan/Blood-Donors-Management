@@ -22,76 +22,16 @@
                     </div>
                 </div>
                 <div class="widget-content nopadding">
-                    <form class="form-horizontal" method="post" action="/admin/requests/update" name="basic_validate"
+                    <form class="form-horizontal" method="post" action="/admin/bloodgroup/update" name="basic_validate"
                         id="basic_validate" novalidate="novalidate">
-                        <div class="control-group">
-                            <label class="control-label">Date Picker (mm-dd)</label>
-                            <div class="controls">
-                                <div data-date="12-02-2012" class="input-append date datepicker">
-                                    <input type="text" name="till_date" value="{{request.till_date}}"
-                                        data-date-requestat="mm-dd-yyyy" class="span11">
-                                    <span class="add-on"></span><i class="icon-th"></i></span> </div>
-                            </div>
-                            <input type="hidden" name="id" value="{{request._id}}">
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label">Your Name</label>
-                            <div class="controls">
-                                <input type="text" name="name" id="name" value="{{request.name}}">
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label">Your Email</label>
-                            <div class="controls">
-                                <input type="text" name="email" id="email" value="{{request.email}}">
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label">Contact</label>
-                            <div class="controls">
-                                <input type="text" name="number" id="number" value="{{request.contact}}">
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label">Age</label>
-                            <div class="controls">
-                                <input type="text" name="age" id="age" value="{{request.age}}">
-                            </div>
-                        </div>
                         <div class="control-group">
                             <label class="control-label">Blood Group</label>
                             <div class="controls">
-                                <input type="text" name="blood_group" id="blood_group" value="{{request.blood_group}}">
+                                <input type="hidden" value="{{bloodgroup._id}}" name="id">
+                                <input type="text" name="name" id="name" value="{{bloodgroup.blood_group}}">
                             </div>
                         </div>
-                        <div class="control-group">
-                            <label class="control-label">Hospital Name</label>
-                            <div class="controls">
-                                <input type="text" name="hospital_name" id="hospital_name"
-                                    value="{{request.hospital_name}}">
-                            </div>
-                        </div>
-
-                        <div class="control-group">
-                            <label class="control-label">Address</label>
-                            <div class="controls">
-                                <input type="text" name="address" id="address" value="{{request.address}}">
-                            </div>
-                        </div>
-
-                        <div class="control-group">
-                            <label class="control-label">Gender</label>
-                            <div class="controls">
-                                <select name="gender" id="gender" placeholder="Select Gender">
-
-                                    <option value="male" {{#isValue request.gender desired='male' type=request.gender}}
-                                        selected='selected' {{/isValue}}>Male</option>
-                                    <option value="female"
-                                        {{#isValue request.gender desired='female' type=request.gender}}selected='selected'
-                                        {{/isValue}}>Female</option>
-                                </select>
-                            </div>
-                        </div>
+                        
                         <div class="form-actions">
                             <input type="submit" value="Validate" class="btn btn-success">
                         </div>
