@@ -18,11 +18,11 @@ const handlbbars   = require('./helpers/datehelper')(expressHbs);
 
 app.engine(".hbs", handlbbars.engine);
 
-// mongoose.connect(
-//   "mongodb://uzairkhan:uzairkhan687@ds349857.mlab.com:49857/blood",
-//   { useNewUrlParser: true, useFindAndModify: false }
-// );
-mongoose.connect("mongodb://localhost:27017/shopping", {useNewUrlParser: true, useFindAndModify: false});
+mongoose.connect(
+  "mongodb://uzairkhan:uzairkhan687@ds349857.mlab.com:49857/blood",
+  { useNewUrlParser: true, useFindAndModify: false }
+);
+// mongoose.connect("mongodb://localhost:27017/shopping", {useNewUrlParser: true, useFindAndModify: false});
 var passports = require('./middlewares/passport');
 
 app.set('view engine', '.hbs');
