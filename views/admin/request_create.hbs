@@ -1,0 +1,96 @@
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            {{# if hasErrors }}
+            <div class="alert alert-danger">
+                <button class="close" data-dismiss="alert">×</button>
+{{#each messages}}
+                <strong>Failed!</strong> {{this.msg}} <br>
+        {{/each}}
+            </div>
+        {{/if}}
+            
+            <p></p>
+            
+            <div class="widget-box">
+
+                <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+                    <h5>Create Request</h5>
+                    <div class="pull-right" style="margin-top:2px;">
+                        <a href="/admin/requests" class="btn btn-primary btn-lg">Requests List</a>
+                    </div>
+                </div>
+                <div class="widget-content nopadding">
+                    <form class="form-horizontal" method="post" action="store" name="basic_validate" id="basic_validate"
+                        novalidate="novalidate">
+                        <div class="control-group">
+                            <label class="control-label">Date Picker (mm-dd)</label>
+                            <div class="controls">
+                                <div data-date="12-02-2012" class="input-append date datepicker">
+                                    <input type="text" name="till_date" value="12-02-2012" data-date-format="mm-dd-yyyy" class="span11">
+                                    <span class="add-on"></span><i class="icon-th"></i></span> </div>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Your Name</label>
+                            <div class="controls">
+                                <input type="text" name="name"  id="name" value="{{form.name}}">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Your Email</label>
+                            <div class="controls">
+                                <input type="text" name="email" id="email" value="{{form.email}}">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Contact</label>
+                            <div class="controls">
+                                <input type="text" name="number" id="number" value="{{form.number}}">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Age</label>
+                            <div class="controls">
+                                <input type="text" name="age" id="age" value="{{form.age}}">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Blood Group</label>
+                            <div class="controls">
+                                <input type="text" name="blood_group" id="blood_group" value="{{form.blood_group}}">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Hospital Name</label>
+                            <div class="controls">
+                                <input type="text" name="hospital_name" id="hospital_name" value="{{form.hospital_name}}">
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label">Address</label>
+                            <div class="controls">
+                                <input type="text" name="address" id="address" value="{{form.address}}">
+                            </div>
+                        </div>
+                        
+                        <div class="control-group">
+                            <label class="control-label">Gender</label>
+                            <div class="controls">
+                                <select name="gender" id="gender" placeholder="Select Gender">
+                                   
+                                    <option value="male" {{#isValue form.gender desired='male' type=form.gender}} selected='selected'{{/isValue}}>Male</option>
+                                    <option value="female" {{#isValue form.gender desired='female' type=form.gender}}selected='selected' {{/isValue}}>Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <input type="submit" value="Validate" class="btn btn-success">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

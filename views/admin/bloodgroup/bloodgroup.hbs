@@ -1,0 +1,62 @@
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            {{!-- {{# if messages }}
+            <div class="alert alert-success">
+                <button class="close" data-dismiss="alert">×</button>
+                <strong>Success!</strong> {{messages}}
+            </div>
+            {{/if}}
+            {{# if success }}
+            <div class="alert alert-success">
+                <button class="close" data-dismiss="alert">×</button>
+                <strong>Success!</strong> {{success}}
+            </div>
+            {{/if}} --}}
+            <div class="widget-box">
+
+                <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+                    <h5>Data table</h5>
+
+                    <div class="pull-right" style="margin-top:2px;">
+                        <a href="bloodgroup/create" class="btn btn-primary btn-lg">Add Blood Group</a>
+                    </div>
+                </div>
+                <div class="widget-content nopadding ">
+                    <table class="table table-bordered data-table">
+                        <thead>
+                            <tr>
+                                {{!-- <th>S.#</th> --}}
+                                <th>Bllod Group</th>
+                          
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{# if bloodgroups}}
+                            {{# each bloodgroups}}
+                            <tr>
+                                <td>{{this.blood_group}}</td>
+                         
+                                <td>
+
+                                    <a href="requests/delete/{{this._id}}" class="btn btn-danger btn-sm">
+                                        Delete
+                                    </a>
+                                    <a href="requests/edit/{{this._id}}" data-donor-id="" class="btn btn-light btn-sm">
+                                        Edit
+                                    </a>
+                                    <span style="display:block; width:170px;"></span>
+
+                                </td>
+                            </tr>
+                            </tr>
+                            {{/each}}
+                            {{/if}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

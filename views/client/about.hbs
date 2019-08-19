@@ -1,0 +1,236 @@
+<!-- Start Breadcrumbs -->
+<section class="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h2>About Us</h2>
+                <ul class="bread-list">
+                    <li><a href="index.html">Home<i class="fa fa-angle-right"></i></a></li>
+                    <li class="active"><a href="about-us.html">about us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ End Breadcrumbs -->
+<!-- About Us -->
+<section id="about-us" class="about-us section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="tabs-main center-nav">
+                    <div class="nav-main">
+                        <!-- Tab Menu -->
+                        <ul class="nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#about" role="tab" data-toggle="tab"><i
+                                        class="fa fa-user"></i><span>About US</span></a></li>
+                            <li role="presentation"><a href="#story" role="tab" data-toggle="tab"><i
+                                        class="fa fa-pencil"></i><span>Our Story</span></a></li>
+                            <li role="presentation"><a href="#photo" role="tab" data-toggle="tab"><i
+                                        class="fa fa-photo"></i><span>Donor Gallery</span></a></li>
+                            <li role="presentation"><a href="#challanges" role="tab" data-toggle="tab"><i
+                                        class="fa fa-rocket"></i><span>Challanges</span></a></li>
+                        </ul>
+                    </div>
+                    <!--/ End Tab Menu -->
+                    <div class="tab-content">
+                        <!-- About Us Tab -->
+                        <div role="tabpanel" class="tab-pane fade in active" id="about">
+                            <div class="about-inner">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-12 col-xs-12">
+                                        <!-- About Image -->
+                                        <div class="single-image">
+                                            <img src="/client/images/about-v.jpg" alt="">
+                                            <!-- Tab Video -->
+                                            <a href="https://www.youtube.com/watch?v=6bpVqPFTja4"
+                                                class="video-popup mfp-iframe"><i class="fa fa-play"></i></a>
+                                            <!--/ End tab video -->
+                                        </div>
+                                    </div>
+
+                                    <!-- End About Image -->
+                                    <div class="col-md-7 col-sm-12 col-xs-12">
+                                        <div class="content">
+                                            <h2 class="tab-title">About Company</h2>
+                                            <p class="text">'Life Saver Blood Bank' is the first product resulted out of
+                                                the community welfare initiative called 'People Project' from uSiS
+                                                Technologies. Universally, 'Blood' is recognized as the most precious
+                                                element that sustains life. It saves innumerable lives across the world
+                                                in a variety of conditions. Once in every 2- seconds, someone, somewhere
+                                                is desperately in need of blood. More than 29 million units of blood
+                                                components are transfused every year. The need for blood is great - on
+                                                any given day, approximately 39,000 units of Red Blood Cells are needed.
+                                                Each year, we could meet only up to 1% (approx) of our nation’s demand
+                                                for blood transfusio </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ End About Us Tab -->
+                        <!-- Story Tab -->
+                        <div role="tabpanel" class="tab-pane fade in" id="story">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="content">
+                                        <h2 class="tab-title">Our Story</h2>
+                                        <p class="text">Every country needs to have a well-coordinated national blood
+                                            service to ensure adequate and safe supply of blood for all patients that
+                                            require transfusion. The best way that countries can assure a reliable, safe
+                                            blood supply is to obtain 100% of blood donations from voluntary, unpaid
+                                            donors. In 2008, 62 countries had reached that goal (from 39 countries in
+                                            2002) and many more are making rapid progress.
+
+                                        </p>
+                                        <p class="text"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ End Story Tab -->
+                        <!-- Gallery Tab -->
+                        <div role="tabpanel" class="tab-pane fade in" id="photo">
+                            <div class="photo-gallery">
+                                <div class="row fix">
+                                    <?php foreach ($donors as $key => $donor): ?>
+                                    <div class="col-md-4 col-sm-6 col-xs-12 fix">
+                                        <div class="single-gallery">
+                                            <img src="../uploads/donor_images/<?php echo $donor['img'] ?>" alt="" />
+                                            <a data-fancybox="gallery"
+                                                href="../uploads/donor_images/<?php echo $donor['img'] ?>"><i
+                                                    class="fa fa-search"></i></a>
+                                            <div class="caption">
+                                                <p>Gallery Caption</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <?php endforeach ?>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ End Gallery Tab  -->
+                        <!-- challanges Tab -->
+                        <div role="tabpanel" class="tab-pane fade in" id="challanges">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="content">
+                                        <h2 class="tab-title">Our Challanges</h2>
+                                        <p class="text">Number one problem that blood banks face nowadays is the lack of
+                                            donors. If you can give blood then do so. You can donate whole blood every
+                                            58 days, plasma every 28 days, platelets every 7 days. Do what is best for
+                                            you but please donate if you can. </p>
+                                        <p class="text">
+                                            Lack of awareness regarding where to donate, when to donate, when not to
+                                            donate, what all components can be donated.
+                                            Lack of proper storage of blood and its components.
+                                            Inaccessibility to available blood in case of requirements.
+                                            No centralized database.
+                                            No regular donation centers running round the year.
+                                            Lack of proper instruments at Blood Bank centers.
+                                        </p>
+                                        <p class="text">On Blood Collection Side
+                                            Many parts in the country still have problem of too few voluntary donors.
+                                            The other problem is that blood donation camps do not happen all year round
+                                            and the blood banks face periodic shortage.
+                                            On Blood Bank Management Side
+                                            Lack of uniform, consistent and up-to-date regulation and policies from the
+                                            Government with the Department of Drugs and Cosmetics Standard and Control
+                                            on one end and National AIDS Control organisation on the other.
+                                            Struggle to compete with blood banks running with commercial motives which
+                                            tend to influence the organisers of camps - especially in colleges in public
+                                            blood donation drives by money and incentives.
+                                            Inability to transfer blood units between blood banks which sometimes leads
+                                            to units expiring on shelf.
+                                            The difficulty in maintaining quality with low costs - especially in the
+                                            context of recruiting and retaining professionals who get poached easily.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ End challanges Tab -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End About Us -->
+<!-- Start Services -->
+<!-- <section id="services" class="services section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="section-title">
+								<h1>Our services</h1>
+								<p>Contry to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						Single Service
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="single-services">
+								<div class="icon"><i class="fa fa-edit"></i></div>
+								<div class="icon two"><i class="fa fa-edit"></i></div>
+								<h2><a href="service-single.html">Business Consulting</a></h2>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit amet</p>
+							</div>
+						</div>
+						<--/ End Single Service -->
+<!-- Single Service -->
+<!-- <div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="single-services">
+								<div class="icon"><i class="fa fa-lightbulb-o"></i></div>
+								<div class="icon two"><i class="fa fa-lightbulb-o"></i></div>
+								<h2><a href="service-single.html">Creative Idea</a></h2>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit amet</p>
+							</div>
+						</div> -->
+<!--/ End Single Service -->
+<!-- Single Service -->
+<!-- <div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="single-services">
+								<div class="icon"><i class="fa fa-money"></i></div>
+								<div class="icon two"><i class="fa fa-money"></i></div>
+								<h2><a href="service-single.html">Investment Plan</a></h2>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit amet</p>
+							</div>
+						</div> -->
+<!--/ End Single Service -->
+<!-- Single Service -->
+<!-- <div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="single-services">
+								<div class="icon"><i class="fa fa-clock-o"></i></div>
+								<div class="icon two"><i class="fa fa-clock-o"></i></div>
+								<h2><a href="services-single.html">Time sensetive</a></h2>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit amet</p>
+							</div>
+						</div> -->
+<!--/ End Single Service -->
+<!-- Single Service -->
+<!-- <div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="single-services">
+								<div class="icon"><i class="fa fa-globe"></i></div>
+								<div class="icon two"><i class="fa fa-globe"></i></div>
+								<h2><a href="service-single.html">World Marketing</a></h2>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit amet</p>
+							</div>
+						</div> -->
+<!--/ End Single Service -->
+<!-- Single Service -->
+<!-- <div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="single-services">
+								<div class="icon"><i class="fa fa-magic"></i></div>
+								<div class="icon two"><i class="fa fa-magic"></i></div>
+								<h2><a href="service-single.html">Trusted Support</a></h2>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit amet</p>
+							</div> -->
+<!-- </div> -->
+<!--/ End Single Service -->
+<!-- </div>
+				</div>
+			</section> -->
+<!--/ End Services -->

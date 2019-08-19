@@ -1,0 +1,177 @@
+<!-- Start Breadcrumbs -->
+<section class="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h2>Register Donor</h2>
+                <ul class="bread-list">
+                    <li><a href="index.html">Home<i class="fa fa-angle-right"></i></a></li>
+                    <li class="active"><a href="about-us.html">Register Donor</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ End Breadcrumbs -->
+<section id="contact-us" class="contact-us section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="section-title">
+                    <h1>Register As A Donor</h1>
+                    <p>The blood you donate gives someone another chance at life. One day that someone may be a close
+                        relative, a friend, a loved one—or even you.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-md-10 col-sm-10 col-xs-10 col-md-offset-1">
+    
+                <form class='form donorForm' id ='donorForm' method="post" action="/register">
+                {{!-- <div class="row">
+                    <div class="col-md-12">
+                        <div>
+                            <center>
+                                <img width="230" height="300" src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png"
+                                    class="avatar img-circle img-thumbnail" alt="avatar">
+                                <input type="file" class="file-upload" name="userfile" required="required">
+                            </center>
+                            <center>
+                                <span class="upload_error">
+                                error show here
+                                </span>
+                            </center>
+                        </div>
+                    </div>
+                </div> --}}
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="first_name" value=""
+                                placeholder="First Name">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="last_name" value=""
+                                placeholder="Last Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="f_name" value=""
+                                placeholder="Father Name">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" id="email" name="email" value=""
+                                placeholder="Email Address">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="password" id="password" name="password"
+                                value="" placeholder="password">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="password" name="cpassword" value=""
+                                placeholder="Confirm Password">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="contact_no" value=""
+                                placeholder="Moible Number">
+                        </div>
+                    </div>
+                    {{!-- <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" name="dob" placeholder="Date Of Birth">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="number" name="weight" placeholder="Weight">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                        <select name="blood_id" id="selectTag" class='select2 form-control'>
+                            <option value="">Select blood group</option>
+                        </select>
+                        </div>
+                    </div> --}}
+                </div>
+                {{!-- <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="city" placeholder="City Name">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="village" placeholder="Village Name in case of village">
+                        </div>
+                    </div>
+                </div> --}}
+                {{!-- <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="street" placeholder="Street Name in case of city">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="postcode" placeholder="Postal Code ">
+                        </div>
+                    </div>
+                </div> --}}
+
+                {{!-- <div class="row">
+                    <div class="col-md-1">
+                        Gender:
+
+                    </div>
+                    <div class="col-md-3">
+                        Male: <input type="radio" id="male" name="gender" value="male"> <label for="male">
+
+                        </label>
+                        Female: <input type="radio" id="female" name="gender" value="female"> <label for="female">
+
+                        </label>
+                    </div>
+                </div> --}}
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="form-group button">
+                            <input type="submit" name="submit" value="submit" class="btn primary">
+                        </div>
+                    </div>
+                </div>
+
+                </form>
+            </div>
+            <!--/ End Contact Form -->
+            <!-- Contact Address -->
+            <!-- put it here -->
+        </div>
+        <!--/ End of row -->
+
+    </div>
+</section>
+<!--/ End Contact -->
+<style>
+    .upload_error p {
+        color: red;
+    }
+</style>

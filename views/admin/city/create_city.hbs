@@ -1,0 +1,68 @@
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            {{# if hasErrors }}
+            <div class="alert alert-danger">
+                <button class="close" data-dismiss="alert">×</button>
+                {{#each messages}}
+                <strong>Failed!</strong> {{this.msg}} <br>
+                {{/each}}
+            </div>
+            {{/if}}
+            <div class="widget-box">
+                <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+                    <h5>Create City</h5>
+                    <div class="pull-right" style="margin-top:2px;">
+                        <a href="/admin/city" class="btn btn-primary btn-lg">City List</a>
+                    </div>
+                </div>
+                <div class="widget-content nopadding">
+                    <form class="form-horizontal" method="post" action="store" name="basic_validate" id="basic_validate"
+                        novalidate="novalidate">
+                        <div class="control-group">
+                            <label class="control-label">City Name</label>
+                            <div class="controls">
+                                <input type="text" name="name" id="name" value="{{form.name}}">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Postal Code</label>
+                            <div class="controls">
+                                <input type="text" name="postcode" id="postcode" value="{{form.postcode}}">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">District</label>
+                            <div class="controls">
+                                <input type="text" name="district" id="district" value="{{form.district}}">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">state</label>
+                            <div class="controls">
+                                <input type="text" name="state" id="state" value="{{form.state}}">
+                            </div>
+                        </div>
+
+                        {{!-- <div class="control-group">
+                            <label class="control-label">Gender</label>
+                            <div class="controls">
+                                <select name="gender" id="gender" placeholder="Select Gender">
+
+                                    <option value="male" {{#isValue form.gender desired='male' type=form.gender}}
+                                        selected='selected' {{/isValue}}>Male</option>
+                                    <option value="female"
+                                        {{#isValue form.gender desired='female' type=form.gender}}selected='selected'
+                                        {{/isValue}}>Female</option>
+                                </select>
+                            </div>
+                        </div> --}}
+                        <div class="form-actions">
+                            <input type="submit" value="Validate" class="btn btn-success">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

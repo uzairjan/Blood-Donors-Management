@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <!-- Meta tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="SITE KEYWORDS HERE" />
+    <meta name="description" content="">
+    <meta name='copyright' content='codeglim'>
+
+    <!-- Title Tag -->
+    <title>Life &minus; Savier</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/client/images/favicon.png">
+
+    <!-- Web Font -->
+    {{!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet"> --}}
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/client/css/bootstrap.min.css">
+
+    <!-- Tromas CSS -->
+    <link rel="stylesheet" href="/client/css/theme-plugins.css">
+    <link rel="stylesheet" href="/client/css/style.css">
+    <link rel="stylesheet" href="/client/css/responsive.css">
+    <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+    <link rel="stylesheet" type="text/css"
+        href="/client/libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+
+
+    <!-- Tromas Color -->
+    <link rel="stylesheet" href="/client/css/skin/skin1.css">
+    <!-- <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/skin/skin2.css"> -->
+    <!--<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/skin/skin3.css">-->
+    <!--<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/skin/skin4.css">-->
+    <!--<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/skin/skin5.css">-->
+    <!-- <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/skin/skin6.css"> -->
+    <!--<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/skin/skin7.css">-->
+    <!-- <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/skin/skin8.css"> -->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body class="box-bg">
+    <div class="boxed-layout">
+
+        <!-- Start Header -->
+        <header id="header" class="header onepage">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a href="<?php echo base_url(); ?>Welcome_controller/index"><img style="width:55%;"
+                                    src="/client/images/logo.png" alt="logo"></a>
+                        </div>
+                        <!--/ End Logo -->
+                        <div class="mobile-nav"></div>
+                    </div>
+                    <div class="col-md-9 col-sm-12 col-xs-12">
+                        <!-- Header Widget -->
+                        <div class="header-widget">
+                            <!-- Single Widget -->
+                            <div class="single-widget">
+                                <i class="fa fa-clock-o"></i>
+                                <h4>Opeening Time</h4>
+                                <p>Mon-Sat: 9.00-18.00</p>
+                            </div>
+                            <!--/ End Single Widget -->
+                            <!-- Single Widget -->
+                            <div class="single-widget">
+                                <i class="fa fa-envelope"></i>
+                                <h4>Email address</h4>
+                                <p><a href="mailto:info@yourwebsite">info@yourwebsite.com</a></p>
+                            </div>
+                            <!--/ End Single Widget -->
+                            <!-- Single Widget -->
+                            <div class="single-widget">
+                                <i class="fa fa-phone"></i>
+                                <h4>Phone</h4>
+                                <p>+880123-467-789</p>
+                            </div>
+                            <div class="single-widget">
+                                <!-- Single button -->
+                                <!-- <div class="btn-group"> -->
+                                <!-- <button type="button" > -->
+                                <i id="setting" class="fa fa-cogs dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false"></i>
+                                <h4>Setting</h4>
+                                <p>Change Skin</p>
+                                <style type="text/css">
+                                    #setting:hover {
+                                        cursor: pointer;
+                                    }
+                                </style>
+                                <!-- </button> -->
+                                <ul class="dropdown-menu drop-down">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                                <!-- </div> -->
+
+                                <!-- 
+									 -->
+                            </div>
+
+                            <!--/ End Single Widget -->
+                        </div>
+                        <!--/ End Header Widget -->
+                    </div>
+                </div>
+            </div>
+            <!-- Header Inner -->
+            <div class="header-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="nav-area">
+                                <!-- Main Menu -->
+                                <nav class="mainmenu">
+                                    <div class="collapse navbar-collapse">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="/">Home</a>
+                                            </li>
+                                            <li><a href="/about">About
+                                                    Us</a></li>
+                                            <li><a href="/faqs">Faq</a></li>
+                                            <li><a href="/requests">Blood
+                                                    Requests</a>
+                                            <li><a href="/donor">Register As
+                                                    A Donor</a></li>
+                                            <li><a href="/login">Log In</a>
+                                            </li>
+                                            <li><a href="/feedback">Feed
+                                                    Back</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                                <!--/ End Main Menu -->
+                                <!-- Social -->
+                                <ul class="social">
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="active"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                </ul>
+                                <!--/ End Social -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ End Header Inner -->
+        </header>
+        <!--/ End Header -->
+        {{{body}}}
+        <!-- Map Section -->
+        <!-- <div class="map-section">
+				<div id="myMap"></div>
+			</div> -->
+        <!--/ End Map Section -->
+
+        <!-- Start Call-To-Action -->
+        <section class="call-to-action">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="call-to-main">
+                            <h2>Blood Donation<span>IT Will Cost You Nothing</span>It Wil Save A Life</h2>
+                            <a href="<?php echo base_url(); ?>Welcome_controller/Donor" class="btn"><i
+                                    class="fa fa-send"></i>Register With US</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/ End Call-To-Action -->
+
+        <!-- Start Footer -->
+        <footer id="footer" class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <!-- Address Widget -->
+                            <div class="single-widget address">
+                                <h2>Head Office</h2>
+                                <p>Govt Post Graduate College Charsadda.</p>
+                                <ul class="list">
+                                    <li><i class="fa fa-phone"></i>Phone: +123 456-7890 </li>
+                                    <li><i class="fa fa-envelope"></i>Email:<a
+                                            href="mailto:info@youremail.com">Info@youremail.com</a></li>
+                                    <li><i class="fa fa-map-o"></i>Address: Road no 3, Khilgaon 1200, Dhaka Bangladesh
+                                    </li>
+                                </ul>
+                                <ul class="social">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                            <!--/ End Address Widget -->
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <!-- Links Widget -->
+                            <div class="single-widget links">
+                                <h2>Quick Links</h2>
+                                <ul class="list">
+                                    <li><a href="/about"><i class="fa fa-angle-right"></i>About US</a></li>
+                                    <li><a href="<?php echo base_url(); ?>Welcome_controller/faqs"><i
+                                                class="fa fa-angle-right"></i>FAQS</a></li>
+                                    <li><a href="<?php echo base_url(); ?>Welcome_controller/requestes"><i
+                                                class="fa fa-angle-right"></i>Blood Requests</a></li>
+                                    <li><a href="<?php echo base_url(); ?>Welcome_controller/Donor"><i
+                                                class="fa fa-angle-right"></i>Registration</a></li>
+                                    <li><a href="<?php echo base_url(); ?>Welcome_controller/Login"><i
+                                                class="fa fa-angle-right"></i>Login</a></li>
+                                    <li><a href="<?php echo base_url(); ?>Welcome_controller/contact"><i
+                                                class="fa fa-angle-right"></i>Contact With Us</a></li>
+                                </ul>
+                            </div>
+                            <!--/ End Links Widget -->
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <!-- Twitter Widget -->
+                            <div class="single-widget twitter">
+                                <h2>Recent Tweets</h2>
+                                <div class="single-tweet">
+                                    <i class="fa fa-twitter"></i>
+                                    <p><a href="#">@Tromas</a> Mirum est notare quam littera gothica, quam nunc</p>
+                                    <span>4 Minutes Ago</span>
+                                </div>
+                                <div class="single-tweet">
+                                    <i class="fa fa-twitter"></i>
+                                    <p><a href="#">@Tromas</a> claram, anteposuerit litterarum</p>
+                                    <span>3 Hourse Ago</span>
+                                </div>
+                                <div class="single-tweet">
+                                    <i class="fa fa-twitter"></i>
+                                    <p><a href="#">@Tromas</a> per seacula quarta decima et quinta decima.</p>
+                                    <span>5 Hourse Ago</span>
+                                </div>
+                            </div>
+                            <!--/ End Twitter Widget -->
+                        </div>
+                        <!-- <div class="col-md-3 col-sm-6 col-xs-12"> -->
+                        <!-- Gallery Widget -->
+                        <!-- <div class="single-widget photo-gallery">
+									<h2>Donor Gallery</h2>
+									<ul class="list">
+										<li><a href="http://via.placeholder.com/800x400" data-fancybox="images"><img src="http://via.placeholder.com/200x200" alt="#"></a></li>
+										<li><a href="http://via.placeholder.com/800x400" data-fancybox="images"><img src="http://via.placeholder.com/200x200" alt="#"></a></li>
+										<li><a href="http://via.placeholder.com/800x400" data-fancybox="images"><img src="http://via.placeholder.com/200x200" alt="#"></a></li>
+										<li><a href="http://via.placeholder.com/800x400" data-fancybox="images"><img src="http://via.placeholder.com/200x200" alt="#"></a></li>
+										<li><a href="http://via.placeholder.com/800x400" data-fancybox="images"><img src="http://via.placeholder.com/200x200" alt="#"></a></li>
+										<li><a href="http://via.placeholder.com/800x400" data-fancybox="images"><img src="http://via.placeholder.com/200x200" alt="#"></a></li>
+										<li><a href="http://via.placeholder.com/800x400" data-fancybox="images"><img src="http://via.placeholder.com/200x200" alt="#"></a></li>
+										<li><a href="http://via.placeholder.com/800x400" data-fancybox="images"><img src="http://via.placeholder.com/200x200" alt="#"></a></li>
+										<li><a href="http://via.placeholder.com/800x400" data-fancybox="images"><img src="http://via.placeholder.com/200x200" alt="#"></a></li>
+									</ul>
+								</div> -->
+                        <!--/ End Gallery Widget -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <!-- copyright -->
+                            <div class="copyright">
+                                <p>&copy; 2017 All Right Reserved. Design & Developed By <a
+                                        href="http://www.codeglim.com">codeglim</a></p>
+                            </div>
+                            <!--/ End Copyright -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--/ End footer -->
+
+        <!-- Jquery -->
+        <script src="/client/js/jquery.min.js" type="text/javascript"></script>
+        <!-- Bootstrap JS -->
+        <script src="/client/js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- Modernizer JS -->
+        <script src="/client/js/modernizr.min.js" type="text/javascript"></script>
+        <!-- Tromas Plugins -->
+        <script src="/client/js/theme-plugins.js" type="text/javascript"></script>
+        <!-- Google Map JS -->
+        {{!-- <script src="/client/js/googlemapapi.js" type="text/javascript"></script> --}}
+        <!-- Main JS -->
+        <script src="/client/libs/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="/client/libs/jquery-validation/dist/additional-methods.js"></script>
+        <script src="/client/js/main.js" type="text/javascript"></script>
+        <script src="/client/js/custom.js" type="text/javascript"></script>
+        <script src="/client/libs/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+        <script src="/client/libs/extra-libs/DataTables/datatables.min.js"></script>
+
+
+    </div>
+    <style type="text/css">
+        .error {
+            color: #ed1c24;
+        }
+    </style>
+</body>
+
+</html>
+
+<script>
+
+    $(document).ready(function () {
+        $('#zero_config').DataTable();
+        jQuery('#dob,#till_required').datepicker({
+            autoclose: true,
+            todayHighlight: true
+        });
+
+        $("#donorForm").validate({
+            rules: {
+                first_name: "required",
+                last_name: "required",
+                userfile: {
+                    required: true,
+                    accept: 'png,jpg,jpeg,JPG,PNG,JPEG',
+                },
+                password: {
+                    required: true,
+                    minlength: 8
+                },
+                cpassword: {
+                    required: true,
+                    equalTo: "#password"
+                },
+                email: {
+                    required: true,
+                    email: true,
+                    remote: {
+                        url: "<?php echo base_url(); ?>Welcome_controller/check_email",
+                        type: "post",
+                        data: {
+                            email: function () {
+                                // console.log("hello world");
+                                return $("#email").val();
+                            }
+                        }
+                    }
+                },
+                mobile: {
+                    required: true,
+                    maxlength: 11,
+                    minlength: 11
+                },
+                remail: {
+                    required: true,
+                    email: true
+                },
+                fname: "required",
+                contact_no: {
+                    required: true,
+                    number: true,
+                    maxlength: 11
+                },
+                dob: "required",
+                gender: "required",
+                weight: "required",
+                bloodgroup: "required",
+                city: "required",
+                village: "required",
+                street: "required",
+                postcode: "required",
+                blood_group: "required",
+
+            },
+
+            messages: {
+                firstname: "Please enter your firstname",
+                lastname: "Please enter your lastname",
+                userfile: {
+                    required: "Image is required",
+                    accept: "Not a valid image"
+                },
+                password: {
+                    required: "Please provide a password",
+                    minlength: "Your password must be at least 8 characters long"
+                },
+                cpassword: {
+                    required: "Please confirm your password",
+                    equalTo: "Password does not match"
+                },
+
+
+                email: {
+                    email: "Please enter a valid email address",
+                    remote: jQuery.validator.format("{0} is already registerd.")
+                },
+                fname: "Please enter your father name",
+                contact_no: {
+                    required: "Please provide your mobile number",
+                    maxlength: "Your mobile is incorrect"
+                },
+                mobile: {
+                    required: "please Provide mobile number",
+                    maxlength: "incorrect mobile number",
+                    minlength: "incorrect mobile number"
+                },
+                dob: { required: "Date of birth is required" },
+                gender: { required: "Please Select ur Gender" },
+                weight: { required: "Please mention ur approximate weight" },
+                bloodgroup: { required: "Blood group is required" },
+                city: { required: "please mention city name" },
+                village: { required: "Village name Please" },
+                street: { required: "please mention your city name" },
+                postcode: { required: "please enter postal code" },
+                blood_group: { required: "Please enter blood group" },
+                remail: { required: "Please enter your email address" }
+
+            },
+            errorElement: "em",
+            errorPlacement: function (error, element) {
+                // Add the `help-block` class to the error element
+                error.addClass("help-block");
+
+                if (element.prop("type") === "checkbox") {
+                    error.insertAfter(element.parent("label"));
+                } else {
+                    error.insertAfter(element);
+                }
+            },
+            highlight: function (element, errorClass, validClass) {
+                $(element).parents(".col-sm-5").addClass("has-error").removeClass("has-success");
+            },
+            unhighlight: function (element, errorClass, validClass) {
+                $(element).parents(".col-sm-5").addClass("has-success").removeClass("has-error");
+            }
+        });
+    });
+
+</script>
