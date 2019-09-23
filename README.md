@@ -1,7 +1,5 @@
-# node.js admin panel
+# Blood-Donors-Management
 
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
 
 ### Installation
 
