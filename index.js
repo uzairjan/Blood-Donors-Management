@@ -26,7 +26,7 @@ mongoose.connect(
 var passports = require('./middlewares/passport');
 
 app.set('view engine', '.hbs');
-app.use(logger('dev'));
+// app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.text());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -67,7 +67,7 @@ app.use(function(err, req, res, next) {
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
   // render the error page
-  res.status(err.status || 500);
+  res.status(err.status || 5000);
   res.render('error', {layout: 'client_layout'});
 });
 

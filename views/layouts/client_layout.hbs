@@ -352,11 +352,10 @@
                     required: true,
                     email: true,
                     remote: {
-                        url: "<?php echo base_url(); ?>Welcome_controller/check_email",
+                        url: "/checkemail",
                         type: "post",
                         data: {
                             email: function () {
-                                // console.log("hello world");
                                 return $("#email").val();
                             }
                         }

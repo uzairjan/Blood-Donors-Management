@@ -3,7 +3,11 @@ var router = express.Router();
 const clientController = require('../controllers/clientControllers/clientController');
 
 router.get("/", clientController.index);
-router.post("/register",clientController.registerRequest);
+router.post("/register", clientController.registerRequest);
+router.post("/donor",clientController.registerDonor);
+router.post("/checkemail", clientController.checkemail);
+router.get("/checkemailifexist", clientController.CheckIfEmailExist);
+router.post("/registerdonor", clientController.registerDonor);
 
 
 router.get("/about",clientController.about);

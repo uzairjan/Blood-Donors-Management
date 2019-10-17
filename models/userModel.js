@@ -16,7 +16,7 @@ var userSchema = new Schema({
   admin: {type: Boolean},
   town: {type:String},
   postcode: {type:String},
-  img : { data: Buffer, contentType: String},
+  img : { data: Buffer, contentType: String}
 });
 
 userSchema.methods.validPassword = function(password){
