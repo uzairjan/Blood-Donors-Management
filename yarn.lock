@@ -71,10 +71,6 @@ array-unique@^0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/array-unique/-/array-unique-0.3.2.tgz#a894b75d4bc4f6cd679ef3244a9fd8f46ae2d428"
 
-asap@~2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
-
 assign-symbols@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/assign-symbols/-/assign-symbols-1.0.0.tgz#59667f41fadd4f20ccbc2bb96b8d4f7f78ec0367"
@@ -419,12 +415,6 @@ deep-extend@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.6.0.tgz#c4fa7c95404a17a9c3e8ca7e1537312b736330ac"
 
-define-properties@^1.1.2:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/define-properties/-/define-properties-1.1.3.tgz#cf88da6cbee26fe6db7094f61d870cbd84cee9f1"
-  dependencies:
-    object-keys "^1.0.12"
-
 define-property@^0.2.5:
   version "0.2.5"
   resolved "https://registry.yarnpkg.com/define-property/-/define-property-0.2.5.tgz#c35b1ef918ec3c990f9a5bc57be04aacec5c8116"
@@ -518,15 +508,13 @@ expand-brackets@^2.1.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-express-handlebars@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/express-handlebars/-/express-handlebars-3.1.0.tgz#c177ee9a81f6a2abada6b550b77b3e30c6bc0796"
+express-handlebars@^5.3.1:
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/express-handlebars/-/express-handlebars-5.3.1.tgz#ab97d4e5ecb3780c12564ea7553e5fe4687b0406"
   dependencies:
-    glob "^7.1.3"
-    graceful-fs "^4.1.2"
-    handlebars "^4.1.2"
-    object.assign "^4.1.0"
-    promise "^8.0.2"
+    glob "^7.1.6"
+    graceful-fs "^4.2.6"
+    handlebars "^4.7.7"
 
 express-session@^1.16.2:
   version "1.16.2"
@@ -681,10 +669,6 @@ fsevents@^1.2.7:
     nan "^2.12.1"
     node-pre-gyp "^0.12.0"
 
-function-bind@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
-
 gauge@~2.7.3:
   version "2.7.4"
   resolved "https://registry.yarnpkg.com/gauge/-/gauge-2.7.4.tgz#2c03405c7538c39d7eb37b317022e325fb018bf7"
@@ -717,9 +701,9 @@ glob-parent@^3.1.0:
     is-glob "^3.1.0"
     path-dirname "^1.0.0"
 
-glob@^7.1.3:
-  version "7.1.4"
-  resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.4.tgz#aa608a2f6c577ad357e1ae5a5c26d9a8d1969255"
+glob@^7.1.3, glob@^7.1.6:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-7.2.0.tgz#d15535af7732e02e948f4c41628bd910293f6023"
   dependencies:
     fs.realpath "^1.0.0"
     inflight "^1.0.4"
@@ -750,9 +734,9 @@ got@^6.7.1:
     unzip-response "^2.0.1"
     url-parse-lax "^1.0.0"
 
-graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.0.tgz#8d8fdc73977cb04104721cb53666c1ca64cd328b"
+graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.6:
+  version "4.2.9"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.9.tgz#041b05df45755e587a24942279b9d113146e1c96"
 
 handlebars@4.0.14:
   version "4.0.14"
@@ -764,23 +748,20 @@ handlebars@4.0.14:
   optionalDependencies:
     uglify-js "^3.1.4"
 
-handlebars@^4.1.2:
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.1.2.tgz#b6b37c1ced0306b221e094fc7aca3ec23b131b67"
+handlebars@^4.7.7:
+  version "4.7.7"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.7.7.tgz#9ce33416aad02dbd6c8fafa8240d5d98004945a1"
   dependencies:
+    minimist "^1.2.5"
     neo-async "^2.6.0"
-    optimist "^0.6.1"
     source-map "^0.6.1"
+    wordwrap "^1.0.0"
   optionalDependencies:
     uglify-js "^3.1.4"
 
 has-flag@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
-
-has-symbols@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/has-symbols/-/has-symbols-1.0.0.tgz#ba1a8f1af2a0fc39650f5c850367704122063b44"
 
 has-unicode@^2.0.0:
   version "2.0.1"
@@ -1185,6 +1166,10 @@ minimist@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
 
+minimist@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
+
 minimist@~0.0.1:
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.10.tgz#de3f98543dbf96082be48ad1a0c7cda836301dcf"
@@ -1430,24 +1415,11 @@ object-copy@^0.1.0:
     define-property "^0.2.5"
     kind-of "^3.0.3"
 
-object-keys@^1.0.11, object-keys@^1.0.12:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.1.1.tgz#1c47f272df277f3b1daf061677d9c82e2322c60e"
-
 object-visit@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/object-visit/-/object-visit-1.0.1.tgz#f79c4493af0c5377b59fe39d395e41042dd045bb"
   dependencies:
     isobject "^3.0.0"
-
-object.assign@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/object.assign/-/object.assign-4.1.0.tgz#968bf1100d7956bb3ca086f006f846b3bc4008da"
-  dependencies:
-    define-properties "^1.1.2"
-    function-bind "^1.1.1"
-    has-symbols "^1.0.0"
-    object-keys "^1.0.11"
 
 object.pick@^1.3.0:
   version "1.3.0"
@@ -1570,12 +1542,6 @@ prepend-http@^1.0.1:
 process-nextick-args@~2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
-
-promise@^8.0.2:
-  version "8.0.3"
-  resolved "https://registry.yarnpkg.com/promise/-/promise-8.0.3.tgz#f592e099c6cddc000d538ee7283bb190452b0bf6"
-  dependencies:
-    asap "~2.0.6"
 
 proxy-addr@~2.0.5:
   version "2.0.5"
@@ -2134,6 +2100,10 @@ widest-line@^2.0.0:
   resolved "https://registry.yarnpkg.com/widest-line/-/widest-line-2.0.1.tgz#7438764730ec7ef4381ce4df82fb98a53142a3fc"
   dependencies:
     string-width "^2.1.1"
+
+wordwrap@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-1.0.0.tgz#27584810891456a4171c8d0226441ade90cbcaeb"
 
 wordwrap@~0.0.2:
   version "0.0.3"
