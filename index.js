@@ -71,7 +71,7 @@ app.use(function(err, req, res, next) {
   res.render('error', {layout: 'client_layout'});
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   console.log("server is running at port 5000");
